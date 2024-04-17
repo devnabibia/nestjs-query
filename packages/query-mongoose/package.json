@@ -1,0 +1,39 @@
+{
+  "name": "@ptc-org/nestjs-query-mongoose",
+  "version": "6.1.0",
+  "description": "Mongoose adapter for @ptc-org/nestjs-query-core",
+  "author": "doug-martin <doug@dougamartin.com>",
+  "homepage": "https://github.com/tripss/nestjs-query#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src/**"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "camel-case": "^4.1.2",
+    "lodash.escaperegexp": "^4.1.2",
+    "lodash.merge": "^4.6.2",
+    "tslib": "^2.6.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^9.0.0 || ^10.0.0",
+    "@nestjs/mongoose": "^9.0.0 || ^10.0.0",
+    "mongoose": "^6.5.0 || ^7.0.0 || ^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripss/nestjs-query.git",
+    "directory": "packages/query-typeorm-mongo"
+  },
+  "bugs": {
+    "url": "https://github.com/tripss/nestjs-query/issues"
+  }
+}

@@ -1,0 +1,6 @@
+CREATE
+USER sequelize WITH SUPERUSER;
+CREATE
+DATABASE sequelize;
+GRANT ALL PRIVILEGES ON DATABASE
+sequelize TO sequelize;

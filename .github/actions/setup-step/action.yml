@@ -1,0 +1,15 @@
+name: 'Setup Step'
+description: 'Setup Step'
+author: 'Tycho Bokdam'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Cache node modules
+      id: cache
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cache/mongodb-memory-server
+          **/node_modules
+        key: cache-node-modules-${{ hashFiles('yarn.lock') }}
